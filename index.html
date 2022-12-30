@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODULE 5 TEST</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+    <!--NavBar-->
+    <header class="header sticky">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">  Title</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#our-services">Our Services </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#contact-us">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+    <!--Carousel-->
+    <div class=" d-flex justify-content-center flex-column" style="background-color: black;"  id="home">
+        <div class="container-fluid bg">
+            <div class="row ms-5 pt-5">
+      
+              <div class="col-sm-12 col-md-6 text-light mb-5">
+                 <h1 id="header-text">BUSINESS <br> LANDING <br> PAGE</h1>
+              </div>
+      
+              <div class="col-sm-12 col-md-6 mt-5 mb-5">
+                  <img  class="img-fluid" src="header.png" alt="header-img" id="header-img">
+              </div>
+      
+            </div>
+         </div>
+         <a href="#our-services" class="d-flex justify-content-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AAACpqamGhobQ0NDOzs7S0tLLy8vV1dXa2tr09PTp6ekmJibw8PDe3t4jIyNGRka1tbWdnZ2Ojo53d3d9fX1lZWXDw8MwMDAJCQkSEhIYGBg+Pj7j4+NOTk6ZmZlYWFhxcXGxsbEvLy+iDymNAAAFBUlEQVR4nO2d63LiMAxGCdALoS13eqNbaN//HReXzVIgcSRZsf0xOn874+j0k+LAMHGvF49ytpw+FJPpbvYY8arxGK2LI9vb1OWoUy6LU3Zl6pJ0Gb8U50yeUhelydOFn2OYuiw9ykmtYTFOXZgaf+oFi03qwrSYNQgWxTx1aUo8NBoW17ExNkd4LSGuPYYvqYtTwSN4HW166zV8Tl2eAs9ew1nq8hTw3WiK4jN1eQr0vYaD1OUpYIb4mCE+ZoiPGeJjhviYIT5miI8Z4mOG+JghPmaIjxniY4b4mCE+ZoiPGeJjhviYIT5miI8Z4mOG+JghPmaIjxniY4b4mCE+ZoiPGeJjhviYIT5miI8Z4mOG+JghPmaIjxniY4b4mCE+ZoiPGeJjhviYIT5miI8Z4mOG+JghPmaIjxniY4b4mCE+mRuWw/lgtVr0A84T6czwqb9YrQbzYchxLqP1/6M3NgPp++G7MXwcbKolJuuRcJHx2Sv/F7JlOjFcnK6yFp12cvm2+BfROh0Y1pzLI3g//7ymnFfJ2Tf6hsPXmoXYJ2V81Rd0w69H3fCmfqUv3iqNRzbwU9Q2bCyNdwzYW2NJd9yKlA0bEtzzplUVV1HX8M6zVp+xzruvKGajqhp6Dzx5p6/j+0exFTUN/Se6MNpr5V+I16iKhs0zeGBFXmnTshJLUc9w2FYW+ZSzR+8Y/sBoVDXDlhbd8059dh63LsXZ+rUMWxMs6IfxfRDWojeqkmHbDP7wQVyMkiE9RR3D9hZ1UDMsPYfd/YI4iyqG96SKHsgfhptOZDyD1qgahpQZ3POHKtj7pC1IU1QwJAoyDgCj9URBa9RwQ3I592TD3pS6JuF2E2xIu8nsmdIF6YsSGjXUkNqizA+IW/KyrSkGGtL/2VuOIHXDcLTNYpgheQYZW8WB+lOYa2lp1CBDeoIF+0tr0lMSRTHEkCEo+BqQPuH+1QMM6S0qO+NbSVFu2LWgVqOKDRktKvgal32NZkWpIePivG9KT2Ck2NgnQsMR/dLiBB2MWWy6jsyw+xmsCJ9FkWGMGawITlFiGC9BpmLt1QSGjBlUEAxuVL4hI8HgFj3ASLFGkW0Yt0XZipfX5BrGbtEDIU/ATEOGYMBGf0nALPIM489ghfwBjmXIEFRN0CGeRY5hmhkUKJ70D8MwraB4FumG6WawQpYi2TB1gkzFYw1UQ8Z3X50JyhqVaJi+RQ8IHuBohike1YIVhwzDPFr0APuzKcUw1aNaPdxZJBjmMoMVzBTbDfNK0MGbxVbDnGZQoHjXapjDRh+keNvwa+N/LHJMkKm48/512/4LsySCrNuNEpFuMkcYm4YKUbaJU+KmGD1BB2MWg4k8g/EVEwnGm8UEM1gRJ8VkCcZSTCoYQzGxYPeKyQW7VsxAsNutP8lGf0l3m0bCbeKUrlLMJEFHN7OYxQxWdKGYlWAXipkJ6itmJ6h9u8noJnNEM8UME3ToKWYqqKeYraDWLGY5gxUaD3DZPKrVE55i1gk6Qmcx4xmsCFMEEAxThBAMUQQRlN9usr/JHJGlCJOgQ5IiUIIOfopQCTq4KYIl6OClCJegg5MiYIIOuiKoIL1RIVv0AE0RWJCmCC1ImUXYGaxoSxE8QYc/RfgEHb4UryBBR3OKV5GgoynFK0nQUZ/i1STo+Pi+8PsWvXc5X8rdmeAy5EXjeXL/+81M4peM5005W04nxWS6nMXM7y8QZUPMUh1JUwAAAABJRU5ErkJggg==" alt="arrow" class="arrow">
+         </a>
+    </div>
+
+
+
+   <!--About us-->
+  
+   <div class="container-fluid pt-5 " id="about-us">
+    <div class="row justify-content-center">
+
+      <div class=" col-sm-12 col-md-4 mt-5 mb-5  mobile-view-img">
+        <img class="img-fluid" src="about.png" alt="about-img" id="about-us-img">
+      </div>
+
+      <div class="col-md-6 mt-5 mb-8 ms-5" id="right-about-us">
+        <h1 class="about-us">About us</h1>
+        <p>
+            Every story needs a protagonist, and so does every About Us page. In some cases, that might be you or your founding team. In others, you might treat your business as its own character with a distinct story.
+
+            Either way, stories are all about representing change—starting in one place and ending up in another—which is something your About Us page should also do as visitors scroll through it.  </p>
+      </div>
+    </div>
+   </div>
+
+
+   <!--services-->
+
+   <h1 class="ms-5 mt-5" id="our-services" >OUR SERVICES</h1>
+   <div class="container-fluid">
+    <div class="row mt-5 mb-5 mobile-view-body">
+                 <div class="scrolling-wrapper">
+
+                  <div class=" card col-md-3 border border-dark slider pt-3 pb-3 hover-box">
+                    <h2>Service 1</h2>
+                    A business card should include your full name, job title, company name and logo, website, phone number, email address and any other contact details, such as your social media handles.</div>
+    
+                  
+                  <div class="card col-md-3 border border-dark slider hover-box pt-3 pb-3">
+                    <h2>Service 2</h2>
+                    A business card should include your full name, job title, company name and logo, website, phone number, email address and any other contact details, such as your social media handles.</div>
+    
+                  
+                  <div class="card col-md-3 border border-dark slider hover-box pt-3 pb-3">
+                    <h2>Service 3</h2>
+                    A business card should include your full name, job title, company name and logo, website, phone number, email address and any other contact details, such as your social media handles. </div>
+
+                  <div class="card col-md-3 border border-dark slider hover-box pt-3 pb-3">
+                    <h2>Service 4</h2>
+                    A business card should include your full name, job title, company name and logo, website, phone number, email address and any other contact details, such as your social media handles.</div>
+            </div>
+                         
+    </div>
+   </div>
+
+
+   <!--footer-->
+<form id="contact-us">
+  <div class="container-fluid">
+    <div class="row pt-5 pb-5 center bg">
+      
+       <h1 class="text-light d-flex justify-content-center">Contact Us</h1>
+
+       <form >
+        <div class="form-row">
+          <div class="col d-flex justify-content-center" style="margin-bottom: 10px;" >
+            <input type="text" class="form-control bg-dark text-light" placeholder="First name"  id="i1" required>
+          </div>
+          <div class="col d-flex justify-content-center" style="margin-bottom: 10px;">
+            <input type="text" class="form-control bg-dark text-light" placeholder="Last name"  id="i2" required>
+          </div>
+          <div class="col d-flex justify-content-center" style="margin-bottom: 10px;">
+            <input type="email" class="form-control bg-dark text-light" placeholder="Email Id"  id="i3" required>
+          </div>
+          <div class="col d-flex justify-content-center" style="margin-bottom: 10px;">
+            <input type="text" class="form-control bg-dark text-light" placeholder="Reason for Contacting">
+          </div>
+          <input type="submit" class="btn btn-light button" onclick="showm()">
+          <div class="d-flex justify-content-center message" style=" margin-top: 20px;">
+            <div class="alert alert-success" style="width: 200px;" role="alert" id="message">
+                Your submission is Successful.
+              </div>
+          </div>
+        </div>
+      </form>
+     
+    </div>
+   </div>
+</form>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
+</body>
+</html>
